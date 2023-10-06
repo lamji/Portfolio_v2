@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     marginTop: "40px",
-    height: "90vh",
   },
   SkillsTitle: {
     margin: "50px 0 50px 0",
@@ -20,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   skillsWrapper: {
     p: 5,
     // background: "#56006a",
-    color: "white",
+    color: "var(--main-color)",
     marginRight: "10px",
     height: "40px",
     display: "flex",

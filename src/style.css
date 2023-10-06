@@ -1,22 +1,74 @@
-html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
-
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
-  );
-
-  --imp-text-color: #c770f0;
+:root {
+  --main-color: #26577C;
+  --secondary-color: #E55604;
 }
 
+* {
+  padding: 0;
+  margin: 0
+}
+
+/* 
+html {
+  --section-background-color: linear-gradient(to bottom left,
+      rgba(17, 16, 16, 0.582),
+      rgba(12, 8, 24, 0.904));
+
+  --image-gradient: linear-gradient(to bottom left,
+      rgba(17, 16, 16, 0.678),
+      rgba(12, 10, 22, 0.863));
+
+  --imp-text-color: var(--main-color);
+} */
+/* Card */
+.img {
+  border-radius: 15px;
+}
+
+.headerCard {
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+
+.cardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  margin: 90px auto;
+}
+
+.titleWrapper {
+  margin-right: 20px;
+  text-align: left;
+}
+
+.titleWrapperLeft {
+  text-align: right;
+}
+
+.github {
+  background-color: var(--secondary-color) !important;
+  margin-right: 20px !important;
+  width: 200px;
+}
+
+.view {
+  background-color: var(--main-color) !important;
+  margin-right: 20px !important;
+  width: 100px;
+}
+
+/* Close Card */
+p {
+  color: var(--main-color);
+}
+
+/* 
 .purple {
   color: var(--imp-text-color) !important;
-}
+} */
 
 button:focus {
   box-shadow: none !important;
@@ -57,33 +109,48 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: var(--main-color);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: var(--secondary-color);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: var(--secondary-color);
   border-radius: 12px;
 }
 
 /* --------- */
 /* Navbar Section  */
 /* --------- */
-.sticky {
-  background-color: #1b1a2ea9 !important;
-  transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
-  backdrop-filter: blur(15px) !important;
+/* .sticky {
+  background-color: #ffffffa9 !important;
+} */
+
+.skillWrapper {
+  padding: 80px;
+  background-color: #eeeeee;
+  border-radius: 20px;
+}
+
+.logo2 {
+  color: var(--secondary-color);
+}
+
+.logo {
+  color: var(--main-color);
+  font-weight: bolder;
+  font-size: 40px;
+  /* margin-left: 30px; */
+  padding: 10px
 }
 
 .navbar {
-  position: fixed !important;
+  /* position: fixed !important; */
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
@@ -91,13 +158,13 @@ button:focus {
 
 .navbar-toggler {
   position: relative !important;
-  background-color: transparent !important;
+  /* background-color: transparent !important; */
   border-color: transparent !important;
 }
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: var(--main-color) !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -129,7 +196,7 @@ button:focus {
 .navbar-toggler:not(.collapsed) span:nth-child(2) {
   height: 12px !important;
   visibility: hidden !important;
-  background-color: transparent !important;
+  /* background-color: red !important; */
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
@@ -140,18 +207,10 @@ button:focus {
   opacity: 0.9 !important;
 }
 
-@media (max-width: 767px) {
-  .navbar {
-    padding: 1rem 2rem !important;
-    font-size: 1.4rem !important;
-    background-color: #181a27 !important;
-  }
-  .navbar-nav .nav-item a::after {
-    display: none !important;
-  }
-}
+
+
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color: var(--main-color) !important;
 }
 
 .logo {
@@ -160,7 +219,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: var(--main-color) !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -169,10 +228,19 @@ button:focus {
   padding: 0.8rem 1rem !important;
 }
 
-@media (max-width: 767px) {
-  .nav-link {
-    padding: 0.7rem 1rem !important;
-  }
+
+.contactsWrapper {
+  margin-left: 45px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.flexWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: bold;
 }
 
 .navbar-nav .nav-item {
@@ -194,7 +262,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: var(--secondary-color);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -209,10 +277,14 @@ button:focus {
 /* Home section */
 /* --------- */
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
   display: inline-block;
 }
 
@@ -220,28 +292,38 @@ button:focus {
   0% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
   20% {
     transform: rotate(-8deg);
   }
+
   30% {
     transform: rotate(14deg);
   }
+
   40% {
     transform: rotate(-4deg);
   }
+
   50% {
     transform: rotate(10deg);
   }
+
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  }
+
+  /* Reset for the last half to pause */
   100% {
     transform: rotate(0deg);
   }
 }
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -265,9 +347,27 @@ button:focus {
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  padding: 200px 80px !important;
+  color: var(--main-color);
   text-align: left;
+  height: 100vh;
+  background-color: #F5F5F5;
+
+}
+
+.projectsHeader {
+  font-weight: 700;
+  padding: 50px;
+  font-size: 50px;
+  color: var(--main-color);
+}
+
+.spanMe {
+  color: var(--secondary-color);
+}
+
+.root-container {
+  /* padding: 10px */
 }
 
 .heading {
@@ -279,45 +379,31 @@ button:focus {
   font-size: 2.5em !important;
   padding-left: 45px !important;
 }
+
 .sub-heading-name {
   padding-left: 45px !important;
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: var(--secondary-color);
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: var(--secondary-color) !important;
   font-weight: 600 !important;
 }
+
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: var(--secondary-color) !important;
 }
 
-@media (max-width: 767px) {
-  .Typewriter__wrapper {
-    font-size: 1.4em !important;
-    font-weight: 500 !important;
-    position: absolute !important;
-  }
-  .Typewriter__cursor {
-    display: none !important;
-  }
-}
+
 
 .myAvtar {
   justify-content: center !important;
   padding-top: 9em !important;
-}
-
-@media (max-width: 767px) {
-  .myAvtar {
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
-  }
 }
 
 .home-about-section {
@@ -327,7 +413,7 @@ button:focus {
 }
 
 .home-about-description {
-  color: white !important;
+  color: var(--main-color) !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -408,8 +494,9 @@ button:focus {
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
   padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-bottom: 8px !important;
 }
+
 .footer-copywright {
   text-align: center !important;
 }
@@ -419,15 +506,7 @@ button:focus {
   text-align: center !important;
 }
 
-@media (max-width: 767px) {
-  .footer-copywright {
-    text-align: center !important;
-  }
 
-  .footer-body {
-    text-align: center !important;
-  }
-}
 
 .footer h3 {
   font-size: 1em;
@@ -435,6 +514,7 @@ button:focus {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
+
 .footer-icons {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
@@ -444,6 +524,7 @@ button:focus {
 .blockquote-footer {
   color: #a588c0 !important;
 }
+
 /* --------- */
 /* Projects */
 /* --------- */
@@ -470,6 +551,7 @@ button:focus {
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
+
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
@@ -530,10 +612,12 @@ button:focus {
   background-color: #6d20c5d7 !important;
   border-color: #6d20c5d7 !important;
 }
+
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
 .project-heading {
   color: white !important;
   font-size: 2.3em !important;
@@ -549,8 +633,8 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  /* background-image: var(--section-background-color) !important; */
+  color: var(--main-color) !important;
 }
 
 .tech-icons {
@@ -568,17 +652,14 @@ button:focus {
   transition: all 0.4s ease 0s !important;
 }
 
-@media (max-width: 767px) {
-  .tech-icons {
-    margin: 10px !important;
-  }
-}
+
 
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
@@ -596,11 +677,8 @@ button:focus {
   padding-left: 1px !important;
 }
 
-@media (max-width: 767px) {
-  .about-img {
-    padding-top: 0 !important;
-  }
-}
+
+
 /* --------- */
 /* Resume */
 /* --------- */
@@ -627,17 +705,8 @@ button:focus {
   padding-left: 80px !important;
 }
 
-@media (max-width: 767px) {
-  .resume-left {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-  }
 
-  .resume-right {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-  }
-}
+
 .resume .resume-title {
   font-size: 2em;
   font-weight: 700;
@@ -714,10 +783,12 @@ button:focus {
   animation-fill-mode: forwards;
   animation-duration: 0.85s;
 }
+
 @keyframes likeAnimation {
   0% {
     transform: scale(1.5);
   }
+
   100% {
     transform: scale(1);
   }
@@ -741,6 +812,92 @@ button:focus {
   background-color: #a24dd386 !important;
   border-color: #a24dd386 !important;
 }
+
 .fork-btn-inner::after {
   display: none !important;
+}
+
+.forWide {
+  display: block;
+}
+
+.forMobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 1rem 2rem !important;
+    font-size: 1.4rem !important;
+
+  }
+
+  .nav-link {
+    padding: 0.7rem 1rem !important;
+  }
+
+  .Typewriter__wrapper {
+    font-size: 1.4em !important;
+    font-weight: 500 !important;
+    position: absolute !important;
+  }
+
+  .Typewriter__cursor {
+    display: none !important;
+  }
+
+  .myAvtar {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+  }
+
+  .skillWrapper {
+    padding: 10px;
+    background-color: #efeaea;
+    border-radius: 20px;
+  }
+
+  .home-content {
+    padding: 10px !important;
+    color: var(--main-color);
+    text-align: left;
+    background-color: #F5F5F5;
+    margin-top: 60px;
+  }
+
+  .mobileTop {
+    padding-top: 30px;
+  }
+
+  .projectsHeader {
+    padding-top: 180px;
+  }
+
+  .cardWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  .titleWrapper {
+    margin-right: 0px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .titleWrapperLeft {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .forWide {
+    display: none;
+  }
+
+  .forMobile {
+    display: block;
+    padding-top: 10px;
+  }
 }

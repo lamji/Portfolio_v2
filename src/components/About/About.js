@@ -9,7 +9,7 @@ import { Box } from "@mui/material";
 function About() {
   return (
     <Container fluid className="about-section">
-      <Particle />
+      {/* <Particle /> */}
       <Box
         sx={{
           height: "100vh",

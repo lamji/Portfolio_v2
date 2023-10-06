@@ -10,7 +10,7 @@ import covidLight from "../../Assets/Projects//covidLight.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
+      {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">
           My Personal <strong className="purple">Projects </strong>

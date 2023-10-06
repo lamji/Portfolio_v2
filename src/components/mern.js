@@ -16,9 +16,9 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "none",
   },
   Title: {
-    fontSize: "15px",
+    fontSize: "18px",
     fontWeight: "bold",
-    color: "white",
+    color: "var(--main-color)",
   },
   LogoHolderM: {
     width: "50px",
@@ -71,10 +71,10 @@ const useStyles = makeStyles((theme) => ({
     margin: "10px 0",
   },
   SubTitle: {
-    fontSize: "10px",
+    fontSize: "12px",
     width: "80%",
     height: "80px",
-    color: "white",
+    color: "var(--main-color)",
   },
   Image: {
     width: "80%",
