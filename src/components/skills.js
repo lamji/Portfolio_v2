@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 5,
+    textTransform: "uppercase",
   },
 }));
 
