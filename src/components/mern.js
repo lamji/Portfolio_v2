@@ -110,8 +110,9 @@ export default function FullWidthGrid() {
             MongoDB
           </Typography>
           <Typography variant="body1" className={classes.SubTitle}>
-            MongoDB is a document database, which means it stores data in
-            JSON-like documents.
+            Experienced MongoDB developer skilled in designing and implementing
+            robust, scalable database solutions. Proficient in data modeling,
+            query optimization, replication, sharding, and integration.
           </Typography>
         </Grid>
         <Grid
@@ -131,8 +132,9 @@ export default function FullWidthGrid() {
             Express.js
           </Typography>
           <Typography variant="body1" className={classes.SubTitle}>
-            The moment i started using node.js i used express.js. It is minimal
-            and flexible framework of node.
+            Expertise in leveraging the power of Express.js and MongoDB to
+            develop efficient and high-performing solutions for modern web
+            development needs.
           </Typography>
         </Grid>
         <Grid
@@ -152,8 +154,10 @@ export default function FullWidthGrid() {
             React.js
           </Typography>
           <Typography variant="body1" className={classes.SubTitle}>
-            I love using React on my entire project because it make coding life
-            more easier and faster.
+            Experienced in React.js development, proficient in building dynamic
+            and responsive user interfaces for web applications. Skilled in
+            state management, component lifecycle, and integrating with RESTful
+            APIs.
           </Typography>
         </Grid>
         <Grid
@@ -173,8 +177,9 @@ export default function FullWidthGrid() {
             Node.js
           </Typography>
           <Typography variant="body1" className={classes.SubTitle}>
-            {`Node.js is a JavaScript runtime built on Chrome's V8 JavaScript
-            engine.`}
+            Experienced in Node.js development, proficient in building scalable
+            and efficient server-side applications. Skilled in creating RESTful
+            APIs, handling asynchronous operations, and implementing middleware.
           </Typography>
         </Grid>
       </Grid>

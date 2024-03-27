@@ -132,8 +132,8 @@ button:focus {
 } */
 
 .skillWrapper {
-  padding: 80px;
-  background-color: #eeeeee;
+  /* padding: 80px; */
+  /* background-color: #eeeeee; */
   border-radius: 20px;
 }
 
@@ -357,7 +357,7 @@ button:focus {
 
 .projectsHeader {
   font-weight: 700;
-  padding: 50px;
+  padding: 70px 0px;
   font-size: 50px;
   color: var(--main-color);
 }
@@ -825,6 +825,10 @@ button:focus {
   display: none;
 }
 
+.navWrapper {
+  margin-left: 40px;
+}
+
 @media (max-width: 767px) {
   .navbar {
     padding: 1rem 2rem !important;
@@ -852,7 +856,7 @@ button:focus {
   }
 
   .skillWrapper {
-    padding: 10px;
+    /* padding: 10px; */
     background-color: #efeaea;
     border-radius: 20px;
   }
@@ -870,7 +874,7 @@ button:focus {
   }
 
   .projectsHeader {
-    margin-top: 200px;
+    margin-top: 250px;
   }
 
   .cardWrapper {

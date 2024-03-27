@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "20px",
   },
   Title: {
-    fontSize: "11px",
+    fontSize: "15px",
     fontWeight: "bold",
     margin: "10px 0",
   },
@@ -39,7 +39,7 @@ export default function CenteredGrid() {
         justify="center"
         alignItems="center"
         style={{
-          marginTop: "30px",
+          marginTop: "90px",
         }}
       >
         <Typography variant="body1" className={classes.Title}>

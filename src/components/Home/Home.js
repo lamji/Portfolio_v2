@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
@@ -13,21 +13,20 @@ import Common from "../../common";
 function Home() {
   const data = Common();
 
-  // console.log(data);
   return (
-    <div className="root-container">
+    <div className="root-container2">
       <div className="home-content" id="home">
         <Row>
           <Col md={7} className="home-header">
-            <h1 style={{ paddingBottom: 15 }} className="heading">
+            <h1 style={{ paddingBottom: 15 }} className="">
               Hi There!
             </h1>
-            <h1 className="heading-name">
+            <h1 className="">
               I'M
               <strong className="main-name"> JICK LAMPAGO</strong>
             </h1>
 
-            <div className="contactsWrapper">
+            <div className="">
               <Type />
               <div className="mobileTop"></div>
               <p>
@@ -71,20 +70,19 @@ function Home() {
             />
           </Col>
         </Row>
-      </div>
-      <h2 className="projectsHeader">
-        {" "}
-        This is some of my <span className="spanMe">personal projects</span>
-      </h2>
-      {data.projects.map((info, idx) => {
-        return <Card key={idx} data={info} />;
-      })}
-
-      <div className="skillWrapper" id="skill">
         <h2 className="projectsHeader">
-          Acquired <span className="spanMe">skills</span>
+          Personal<span className="spanMe"> Projects</span>
         </h2>
-        <Skill />
+        {data.projects.map((info, idx) => {
+          return <Card key={idx} data={info} />;
+        })}
+
+        <div className="skillWrapper" id="skill">
+          <h2 className="projectsHeader">
+            Acquired <span className="spanMe">skills</span>
+          </h2>
+          <Skill />
+        </div>
       </div>
     </div>
   );

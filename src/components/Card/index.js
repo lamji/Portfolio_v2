@@ -5,15 +5,15 @@ import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 
 export default function Card(data) {
-  console.log(data.position);
   return (
-    <div className="cardWrapper">
+    <div className="">
       {data.data.position === "right" ? (
         <>
-          <Grid container className="cardWrapper">
+          <Grid container className="">
             <Grid item xs={12} md={6} className="titleWrapper forWide">
               <h2 className="headerCard">{data.data.title}</h2>
               <p>{data.data.subtext}</p>
+              <p>{data.data.descriptions}</p>
               <Button
                 variant="contained"
                 className="github"
@@ -57,6 +57,7 @@ export default function Card(data) {
             <Grid item xs={12} md={6} className="titleWrapperLeft">
               <h2 className="headerCard">{data.data.title}</h2>
               <p>{data.data.subtext}</p>
+              <p>{data.data.descriptions}</p>
               <Button
                 variant="contained"
                 className="github"

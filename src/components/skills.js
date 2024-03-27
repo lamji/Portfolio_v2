@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 5,
     textTransform: "uppercase",
   },
+  CenterSection: {},
 }));
 
 export default function FullWidthGrid() {
@@ -84,7 +85,7 @@ export default function FullWidthGrid() {
               <Grid item xs={6} sm={4} md={2} className={classes.skillsWrapper}>
                 <Typography variant="body1">MUI 5</Typography>
               </Grid>
-              <Grid item xs={6} sm={4} md={3} className={classes.skillsWrapper}>
+              <Grid item xs={6} sm={4} md={4} className={classes.skillsWrapper}>
                 <Typography variant="body1" className={classes.skillsWrapper}>
                   React- Bootstrap
                 </Typography>
