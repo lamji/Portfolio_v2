@@ -350,7 +350,7 @@ button:focus {
   padding: 200px 80px !important;
   color: var(--main-color);
   text-align: left;
-  height: 100vh;
+
   background-color: #F5F5F5;
 
 }
@@ -826,14 +826,27 @@ button:focus {
 }
 
 .navWrapper {
-  margin-left: 40px;
+  padding-left: 40px;
+}
+
+.subWrapper {
+  margin-top: 100px;
 }
 
 @media (max-width: 767px) {
   .navbar {
-    padding: 1rem 2rem !important;
+    /* padding: 1rem 2rem !important; */
+    padding: 10px !important;
     font-size: 1.4rem !important;
 
+  }
+
+  .navWrapper {
+    padding-left: 0px !important;
+  }
+
+  .mernWrapper {
+    margin-bottom: 150px !important;
   }
 
   .nav-link {
@@ -857,8 +870,8 @@ button:focus {
 
   .skillWrapper {
     /* padding: 10px; */
-    background-color: #efeaea;
-    border-radius: 20px;
+    /* background-color: #efeaea;
+    border-radius: 20px; */
   }
 
   .home-content {

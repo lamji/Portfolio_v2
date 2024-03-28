@@ -3,7 +3,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -89,7 +89,7 @@ export default function FullWidthGrid() {
       <Grid
         container
         direction="row"
-        justify="center"
+        justifyContent="center"
         alignItems="center"
         className={classes.Container}
       >
@@ -100,8 +100,9 @@ export default function FullWidthGrid() {
           md={2}
           container
           direction="column"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
+          className="mernWrapper"
         >
           <Grid className={classes.LogoHolderM}>
             <img src="./mongodb.png" alt="" className={classes.Image} />
@@ -122,8 +123,9 @@ export default function FullWidthGrid() {
           md={2}
           container
           direction="column"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
+          className="mernWrapper"
         >
           <Grid className={classes.LogoHolderE}>
             <img src="./expressjs.png" alt="" className={classes.Image} />
@@ -144,8 +146,9 @@ export default function FullWidthGrid() {
           md={2}
           container
           direction="column"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
+          className="mernWrapper"
         >
           <Grid className={classes.LogoHolderR}>
             <img src="./reactjs.png" alt="" className={classes.Image} />
@@ -167,8 +170,9 @@ export default function FullWidthGrid() {
           md={2}
           container
           direction="column"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
+          className="mernWrapper"
         >
           <Grid className={classes.LogoHolderN}>
             <img src="./nodejs.png" alt="" className={classes.Image} />

@@ -33,6 +33,7 @@ export default function Card(data) {
             <Grid item xs={12} md={6} className="titleWrapper forMobile">
               <h2 className="headerCard">{data.data.title}</h2>
               <p>{data.data.subtext}</p>
+              <p>{data.data.descriptions}</p>
               <Button
                 variant="contained"
                 className="github"

@@ -3,18 +3,14 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 
-function NavBar() {
+const NavBar = () => {
   return (
-    <Navbar
-      className="navWrapper"
-      fixed="top"
-      style={{ backgroundColor: "white" }}
-    >
-      <h4 className="logo">
+    <Navbar fixed="top" style={{ backgroundColor: "white" }}>
+      <h4 className="logo navWrapper">
         Port<span className="logo2">folio</span>
       </h4>
     </Navbar>
   );
-}
+};
 
 export default NavBar;

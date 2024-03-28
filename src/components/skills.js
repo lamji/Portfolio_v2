@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   CenterSection: {},
 }));
 
-export default function FullWidthGrid() {
+export default function Skill() {
   const classes = useStyles();
 
   return (
@@ -42,7 +42,7 @@ export default function FullWidthGrid() {
             className={classes.CenterSection}
             container
             direction="row"
-            justify="center"
+            justifyContent="center"
             alignItems="center"
           >
             <Grid
@@ -79,7 +79,7 @@ export default function FullWidthGrid() {
               md={6}
               container
               direction="row"
-              justify="center"
+              justifyContent="center"
               alignItems="center"
             >
               <Grid item xs={6} sm={4} md={2} className={classes.skillsWrapper}>

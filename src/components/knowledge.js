@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "15px",
     fontWeight: "bold",
     margin: "10px 0",
+    textAlign: "center",
   },
   SubTitle: {
     fontSize: "11px",
@@ -36,7 +37,7 @@ export default function CenteredGrid() {
       <Grid
         container
         direction="column"
-        justify="center"
+        justifyContent="center"
         alignItems="center"
         style={{
           marginTop: "90px",
@@ -51,7 +52,7 @@ export default function CenteredGrid() {
           sm={10}
           container
           direction="row"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
         >
           <img src="./React-icon.png" alt="" className={classes.Image} />
